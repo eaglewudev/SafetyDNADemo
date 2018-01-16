@@ -20,6 +20,8 @@ void UMoveCar::BeginPlay()
 {
 	Super::BeginPlay();
 
+	// Find the owning Actor
+	Owner = GetOwner();	
 	// ...
 	
 }
@@ -30,6 +32,6 @@ void UMoveCar::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	// ...
+	
 }
 
